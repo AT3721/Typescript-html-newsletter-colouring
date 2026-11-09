@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Newsletter - Version 2 (Complementary)</title>
+    <!-- Bootstrap 5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        /* CSS Variables: Complementary Palette (Navy Blue & Dynamic Orange) */
+        :root {
+            --bg-main: #eef2f5;
+            --bg-card: #ffffff;
+            --text-primary: #0a2540;
+            --text-muted: #42526e;
+            --primary-color: #0a2540;
+            --primary-dark: #051424;
+            --accent-btn: #ff5630;
+            --accent-btn-hover: #de350b;
+            --promo-bg: #fffae6;
+            --footer-bg: #051424;
+            --footer-text: #8993a4;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .email-container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .header-banner {
+            background-color: var(--primary-color);
+            border-bottom: 4px solid var(--accent-btn);
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid #e2e8f0;
+        }
+
+        .text-custom-muted {
+            color: var(--text-muted);
+        }
+
+        .btn-cta {
+            background-color: var(--accent-btn);
+            color: #ffffff;
+            font-weight: 600;
+            border: none;
+        }
+
+        .btn-cta:hover {
+            background-color: var(--accent-btn-hover);
+            color: #ffffff;
+        }
+
+        .promo-box {
+            background-color: var(--promo-bg);
+            border-left: 4px solid var(--accent-btn);
+        }
+
+        .footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+        }
+
+        .footer a {
+            color: var(--accent-btn);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="email-container shadow-sm my-0 my-md-4 rounded-3 overflow-hidden">
+        <!-- 1. Header Banner -->
+        <header class="header-banner text-center py-4">
+            <h1 class="text-white m-0 fw-bold fs-3">
+                <i class="fa-brands fa-trello me-2" style="color: var(--accent-btn);"></i>Trello Newsletter
+            </h1>
+        </header>
+
+        <!-- Content Wrapper -->
+        <div class="p-4 bg-white">
+            <!-- 2. Hero Section -->
+            <section class="hero-section mb-5 text-center">
+                <img src="https://via.placeholder.com/600x250/0A2540/FF5630?text=Productivity+Unlocked"
+                    class="img-fluid rounded-3 mb-3" alt="Hero Feature">
+                <h2 class="fw-bold fs-4 mb-2">Boost Your Team's Workflow This Month</h2>
+                <p class="text-custom-muted mb-3">Discover new automation tricks, custom views, and power-ups designed
+                    to keep your projects moving forward effortlessly.</p>
+                <a href="#" class="btn btn-cta btn-lg rounded-pill px-4">Explore New Features</a>
+            </section>
+
+            <hr class="my-4 text-secondary opacity-25">
+
+            <!-- 3. Article List -->
+            <section class="article-list mb-5">
+                <h3 class="fs-5 fw-bold mb-3">Latest Updates & Tips</h3>
+                <div class="row g-3">
+                    <!-- Article 1 -->
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm rounded-3">
+                            <img src="https://via.placeholder.com/300x150/0A2540/FFFFFF?text=Butler+Automation"
+                                class="card-img-top" alt="Article 1">
+                            <div class="card-body">
+                                <h4 class="card-title fs-6 fw-bold">Master Butler Automation</h4>
+                                <p class="card-text text-custom-muted small">Save hours every week by automating
+                                    repetitive tasks on your boards.</p>
+                                <a href="#" class="text-decoration-none fw-semibold small"
+                                    style="color: var(--accent-btn);">Read more &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Article 2 -->
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm rounded-3">
+                            <img src="https://via.placeholder.com/300x150/FF5630/FFFFFF?text=Trello+Templates"
+                                class="card-img-top" alt="Article 2">
+                            <div class="card-body">
+                                <h4 class="card-title fs-6 fw-bold">Top 5 Project Templates</h4>
+                                <p class="card-text text-custom-muted small">Jumpstart your next big campaign with
+                                    pre-built community templates.</p>
+                                <a href="#" class="text-decoration-none fw-semibold small"
+                                    style="color: var(--accent-btn);">Read more &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Call-to-Action / Promo Box -->
+            <section class="promo-box p-4 rounded-3 mb-4">
+                <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-bolt fs-2 me-3" style="color: var(--accent-btn);"></i>
+                    <div>
+                        <h4 class="fs-6 fw-bold mb-1">Pro Tip of the Month</h4>
+                        <p class="small text-custom-muted mb-2">Use keyboard shortcuts like pressing 'Space' to
+                            instantly assign yourself to a card!</p>
+                        <a href="#" class="btn btn-sm btn-cta rounded-2">Try it now</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 5. Footer -->
+        <footer class="footer text-center p-4">
+            <div class="social-icons mb-3">
+                <a href="#" class="me-3 fs-5"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="me-3 fs-5"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="me-3 fs-5"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="fs-5"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="small mb-1">&copy; 2026 Trello, Inc. All rights reserved.</p>
+            <p class="small m-0">You received this email because you subscribed to updates. <a href="#">Unsubscribe</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
